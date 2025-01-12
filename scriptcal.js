@@ -14,7 +14,7 @@ const events = [
     { title: "National Science Day", description: "NATIONAL not World", date: "2025-02-28" },
     { title: "Term 2 Starts", description: "Exam Starts?", date: "2025-03-17" },
     { title: "Term 2 Ends & Class Party", description: "Pain Has Ended And Now We Rise To Glory", date: "2025-03-28" },
-    { title: "Class Starts Again?", description: "Why, Just Why?", date: "2025-04-02" }, // Fixed date format
+    { title: "Class Starts Again?", description: "Why, Just Why?", date: "2025-04-2" },
     { title: "Class Ends For Real", description: "The Real Last Day", date: "2025-04-13" },
 ];
 
@@ -50,13 +50,12 @@ function renderCalendar() {
         // Create dropdown for events
         const dropdown = document.createElement('div');
         dropdown.classList.add('dropdown');
-        dropdown.style.display = 'none'; // Hide dropdown by default
 
         if (eventOnThisDay.length > 0) {
             eventOnThisDay.forEach(event => {
                 const eventDiv = document.createElement('div');
                 eventDiv.classList.add('event');
-                eventDiv.innerText = `${event.title }: ${event.description}`; // Show title and description
+                eventDiv.innerText = `${event.title}: ${event.description}`; // Show title and description
                 dropdown.appendChild(eventDiv);
             });
         } else {
@@ -64,8 +63,7 @@ function renderCalendar() {
         }
 
         dayDiv.appendChild(dropdown);
-        dayDiv.onclick = function(event) {
-            event.stopPropagation(); // Prevent event from bubbling up
+        dayDiv.onclick = function() {
             dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
         };
 
@@ -87,14 +85,6 @@ nextMonthButton.onclick = function() {
     }
     renderCalendar();
 };
-
-// Close dropdown when clicking outside
-document.addEventListener('click', function() {
-    const dropdowns = document.querySelectorAll('.dropdown');
-    dropdowns.forEach(dropdown => {
-        dropdown.style.display = 'none';
-    });
-});
 
 // Initial render
 renderCalendar();
