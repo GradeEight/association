@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+    transition: background-color 0.5s ease; /* Smooth background transition */
+}
+
+header {
+    background: #1f1f1f; /* Darker header */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ff4757; /* Red color for links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #ff6b81; /* Lighter red on hover */
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.video {
+    margin: 10px;
+    width: 400px; /* Increased width */
+    transition: transform 0.3s ease; /* Animation for video hover */
+}
+
+.video:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+iframe {
+    width: 100%; 
+    height: 300px; /* Increased height */
+    border-radius: 5px; /* Rounded corners */
+}
+
+section {
+    padding: 20px;
+    background: #1f1f1f; /* Dark background for sections */
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+section:hover {
+    box-shadow: 0 0 20px rgba(255, 71, 87, 0.5); /* Shadow effect on hover */
+}
+
+#spotlight {
+    background: #2c2c2c; /* Slightly lighter background for spotlight */
+}
+
+.spotlight-video {
+    text-align: center;
+}
+
+.spotlight-video iframe {
+    width: 80%; /* Spotlight video width */
+    height: 500px; /* Spotlight video height */
+    border-radius: 5px; /* Rounded corners */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background : #1f1f1f; /* Dark footer */
+    color: #fff;
+    transition: background-color 0.5s ease; /* Smooth background transition */
+}
+
+footer p {
+    margin: 0;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+footer p:hover {
+    color: #ff4757; /* Change color on hover */
+}
