@@ -10,6 +10,7 @@ const events = [
     { title: "Soft Board Decoration", description: "Soft Board Decoration For Pongal", date: "2025-01-06" },
     { title: "PTM-2", description: "The Second PTM", date: "2025-01-11" },
     { title: "Republic Day", description: "India's Republic Day", date: "2025-01-26" },
+    { title: "Class Assembly 2", description: "Our Second Assembly Doen By The Class?", date: "2025-02-5" },
     { title: "Inter House Fest 4", description: "The Fourth Inter House Fest", date: "2025-02-14" },
     { title: "National Science Day", description: "NATIONAL not World", date: "2025-02-28" },
     { title: "Term 2 Starts", description: "Exam Starts?", date: "2025-03-17" },
