@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Selector</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text */
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s ease; /* Smooth transition for background */
+        }
+        .container {
+            text-align: center;
+            opacity: 0; /* Start hidden for animation */
+            animation: fadeIn 1s forwards; /* Fade-in animation */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .button {
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #ff4757; /* Red background */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background and transform */
+        }
+        .button:hover {
+            background-color: #e84118; /* Darker red on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+        .button:active {
+            transform: scale(0.95); /* Slightly shrink on click */
+        }
+        .button-text {
+            margin-top: 5px; /* Space between button and text */
+            font-size: 14px; /* Smaller font size for the text */
+            color: #cccccc; /* Light gray color for the text */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Please Select One Of The Gallery Websites</h1>
+        <button class="button" onclick="window.location.href='indexgall.html'">Photo Gallery</button>
+        <p class="button-text">[Photo Gallery With Only Photos]</p>
+        
+        <button class="button" onclick="window.location.href='indexvid.html'">Video Gallery</button>
+        <p class="button-text">[Video Gallery With Videos And The Spotlight Video]</p>
+                <br>
+        <h5>&copy; TFS Grade 8B Gallery Selector</h5>
+    </div>
+
+</body>
+</html>
