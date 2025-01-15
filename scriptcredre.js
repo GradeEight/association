@@ -7,5 +7,5 @@ document.getElementById('button2').addEventListener('click', function() {
 });
 
 document.getElementById('button3').addEventListener('click', function() {
-    window.location.href = 'https://shellshock.io/'; // Replace with your desired URL
+    window.location.href = 'https://www.riotgames.com/en'; // Replace with your desired URL
 });
