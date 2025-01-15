@@ -36,6 +36,25 @@
         <p>&copy; 2024-25  AY TFS Grade 8B Photo Gallery</p>
     </footer>
     <script src="scriptgall.js"></script>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://gradeeight.github.io/association/indexgallre.html;">
+       <script>
+        window.onload = function() {
+            // Define allowed referrers
+            const allowedReferrers = [
+                'https://gradeeight.github.io/association/indexhub.html', // Main domain
+                'https://gradeeight.github.io/association/indexgallre.html', // Subpage 1
+                'https://gradeeight.github.io/association/indexgall.html', // Subpage 2
+                // Add more subpages or domains as needed
+            ];
+
+            // Check if the referrer is in the allowed list
+            const referrer = document.referrer;
+            const isAllowed = allowedReferrers.some(allowed => referrer.includes(allowed));
+
+            if (!isAllowed) {
+                // Redirect to a different page or show a warning
+                window.location.href = "https://yourdomain.com/warning.html";
+            }
+        };
+    </script>
 </body>
 </html>
