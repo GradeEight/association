@@ -37,12 +37,20 @@
     </footer>
     <script src="scriptgall.js"></script>
     <script>
-  if (document.referrer && !document.referrer.includes('https://gradeeight.github.io/association/indexgallre.html')) {
-    // Redirect to another page or show a message
-    window.location.href = 'https://yourdomain.com/access-denied';
-    // or
-    // document.body.innerHTML = '<h1>Access Denied</h1>';
-  }
-</script>
+        // JavaScript to check the referrer
+        window.onload = function() {
+            // Replace 'yourdomain.com' with your actual domain
+            const allowedDomain = 'https://gradeeight.github.io/association/indexgallre.html';
+            const referrer = document.referrer;
+
+            // Check if the referrer is empty or does not include your domain
+            if (referrer && !referrer.includes(allowedDomain)) {
+                // Redirect to an access denied page or show a message
+                window.location.href = 'https://yourdomain.com/access-denied';
+                // Alternatively, you can display a message instead of redirecting
+                // document.body.innerHTML = '<h1>Access Denied</h1>';
+            }
+        };
+    </script>
 </body>
 </html>
