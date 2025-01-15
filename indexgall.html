@@ -36,5 +36,13 @@
         <p>&copy; 2024-25  AY TFS Grade 8B Photo Gallery</p>
     </footer>
     <script src="scriptgall.js"></script>
+    <script>
+  if (document.referrer && !document.referrer.includes('https://gradeeight.github.io/association/indexhub.html')) {
+    // Redirect to another page or show a message
+    window.location.href = 'https://yourdomain.com/access-denied';
+    // or
+    // document.body.innerHTML = '<h1>Access Denied</h1>';
+  }
+</script>
 </body>
 </html>
