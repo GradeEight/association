@@ -6,7 +6,7 @@ const buttonsData = [
     { name: "Bhuvi", description: "Art, Hanging Out With Friends, Reading, Sports, Listening To Music, Travelling, Binge Watching Series And Shows." },
     { name: "Chitrang", description: "Description Incomplete." },
     { name: "Dhruv", description: "Sigma, Loves Cricket, Rock n Roll, Maths, Science, Computers." },
-    { name: "Dikshil", description: "Alpha Male, Basketball Player, Badminton School Team (Absolutely Of No USe Would NOT Recommend), PCMC (Best Stream), Computer Genius." },
+    { name: "Dikshil", description: "Alpha Male, Basketball Player, Badminton School Team (Absolutely Of No Use Would NOT Recommend), PCMC (Best Stream), Computer Genius." },
     { name: "Gautham", description: "Anime, Sigma, Table Tennis, Gamer, Loves Computer." },
     { name: "Gia", description: "Netflix binge watching, Gamer, Basketball, Gymnastics, Dance." },
     { name: "Innila", description: "Loves Football, Plays Badminton But Does Not Love It, Likes Aesthetic Stuff And I Have A Hamster Named LUNA." },
