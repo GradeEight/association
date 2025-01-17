@@ -50,6 +50,7 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-50px);
     transition: transform 0.5s ease, opacity 0.5s ease;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20231227/pngtree-triangular-style-vector-texture-with-a-deep-blue-hue-image_13903397.png'); /* Replace with your image path */
 }
 
 .close {
@@ -86,6 +87,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    background-image: url('https://th.bing.com/th/id/R.1ee114adf3f6f5d36fa03d98dd027595?rik=Z0uB2FeHhylfbQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fLight-Blue-HD-Backgrounds-Free-Download.jpg&ehk=A1oL99oIPNjoWoX7%2fJZhOrBh8TTdeatDhhq26OJaxJU%3d&risl=&pid=ImgRaw&r=0'); /* Replace with your image path */
 }
 
 button:hover {
@@ -96,4 +98,9 @@ button:hover {
     color: #ff4757;
     margin-top: 10px;
     transition: opacity 0.5s ease;
+}
+body {
+    background-image: url('https://wallpaperaccess.com/full/2112.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
 }
