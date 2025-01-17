@@ -1,4 +1,4 @@
-capconst buttonsData = [
+const buttonsData = [
     { name: "Abishna", description: "Loves art, craft, football, volleyball, badminton, throwball, basketball, reading and writing, swimming and skating." },
     { name: "Anagha", description: "Loves reading, anime, listening to music." },
     { name: "Anvi", description: "Dancer, Badminton player, binger, perfectionist, and above all Spotify Listener. SLAAAAYYY!!!!!" },
@@ -26,7 +26,6 @@ capconst buttonsData = [
     { name: "Shradha", description: "I LOVE CRICKET! VISA❤BFF Shrad" },
     { name: "Shragvi", description: "Description Incomplete" },
     { name: "Tanvi", description: "Football, Basketball, Gaming, Listening to music, Biology" },
-
     { name: "Pranav", description: "Description for Button 28" },
     { name: "Vivaan", description: "" },
     { name: "Subhiksha", description: "Badminton, TT, Science, Art" },
