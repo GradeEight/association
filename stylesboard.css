@@ -30,6 +30,7 @@ body {
 #startButton:hover {
     background-color: #cc0000; /* Darker red on hover */
     transform: scale(1.05);
+    background-image: url('https://cdn.vectorstock.com/i/preview-1x/05/57/abstract-gradient-blue-mesh-wavy-sea-pattern-vector-30150557.jpg'); /* Replace with your image path */
 }
 
 #paintContainer {
@@ -58,6 +59,7 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin: 0 5px;
+    background-image: url('https://cdn.vectorstock.com/i/preview-1x/05/57/abstract-gradient-blue-mesh-wavy-sea-pattern-vector-30150557.jpg'); /* Replace with your image path */
 }
 
 button:hover {
