@@ -36,6 +36,7 @@ h1 {
     overflow: hidden;
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin-top: 20px; /* Space between heading and button */
+    background-image: url('https://static.vecteezy.com/system/resources/previews/002/972/273/original/of-gold-gradient-gold-gradient-background-texture-metallic-free-vector.jpg');
 }
 
 .animated-button::before {
