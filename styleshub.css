@@ -36,6 +36,12 @@ button {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    background-image: url('https://cdn.vectorstock.com/i/preview-1x/05/57/abstract-gradient-blue-mesh-wavy-sea-pattern-vector-30150557.jpg'); /* Replace with your image path */
+}
+body {
+    background-image: url('https://wallpapercave.com/wp/wp8970955.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
 }
 
 button:hover {
