@@ -100,3 +100,8 @@ footer p {
 footer p:hover {
     color: #ff4757; /* Change color on hover */
 }
+body {
+    background-image: url('https://wallpapercave.com/wp/wp8970955.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+}
