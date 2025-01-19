@@ -36,7 +36,6 @@ h1 {
     overflow: hidden;
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin-top: 20px; /* Space between heading and button */
-    background-image: url('https://cdn.vectorstock.com/i/preview-1x/05/57/abstract-gradient-blue-mesh-wavy-sea-pattern-vector-30150557.jpg'); /* Replace with your image path */
 }
 
 .animated-button::before {
