@@ -48,6 +48,7 @@ h1 {
     cursor: pointer;
     font-size: 16px;
     transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Transition for button effects */
+    background-image: url('https://cdn.vectorstock.com/i/preview-1x/05/57/abstract-gradient-blue-mesh-wavy-sea-pattern-vector-30150557.jpg'); /* Replace with your image path */
 }
 
 .button:hover {
