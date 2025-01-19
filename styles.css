@@ -50,7 +50,7 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-50px);
     transition: transform 0.5s ease, opacity 0.5s ease;
-    background-image: url('https://img.freepik.com/premium-vector/abstract-blue-black-colorful-geometric-light-triangle-line-shape-with-futuristic-concept-presentation-background_181182-34640.jpg'); /* Replace with your image path */
+    background-image: url('https://img.freepik.com/vecteurs-libre/conception-fond-abstrait-lignes-diagonales-rougeoyantes-bleues_1017-27053.jpg'); /* Replace with your image path */
 }
 
 .close {
