@@ -26,8 +26,8 @@ const buttonsData = [
     { name: "Shradha", description: "I LOVE CRICKET! VISA(Loves)BFF Shrad." },
     { name: "Shragvi", description: "Short :)." },
     { name: "Tanvi", description: "Football, Basketball, Gaming, Listening To Music, Biology." },
-    { name: "Pranav", description: "Description Incomplete." },
-    { name: "Vivaan", description: "Description Incomplete." },
+    { name: "Pranav", description: "Description Yet To Arrive." },
+    { name: "Vivaan", description: "Description Yet To Arrive." },
     { name: "Subhiksha", description: "Badminton, Table Tennis, Science, Art." },
 ];
 
