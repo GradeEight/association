@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Themed Newspaper Reader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; /* Dark background */
+            color: #e0e0e0; /* Light text color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            transition: background-color 0.5s ease; /* Smooth background transition */
+        }
+        h1 {
+            color: #ffffff; /* White text for the title */
+            margin: 20px 0;
+            opacity: 0; /* Start hidden for animation */
+            animation: fadeIn 1s forwards 0.5s; /* Fade in animation */
+        }
+        #image-viewer {
+            width: 80%;
+            max-height: 70vh; /* Adjusted height to make space for the credits box */
+            overflow-y: auto; /* Enable vertical scrolling */
+            border: 1px solid #444; /* Dark border */
+            border-radius: 8px;
+            background-color: #1e1e1e; /* Darker background for the viewer */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+            opacity: 0; /* Start hidden for animation */
+            animation: fadeIn 1s forwards 1s; /* Fade in animation */
+            padding: 10px;
+        }
+        .page {
+            margin: 10px auto; /* Center each page */
+            text-align: center;
+            transition: transform 0.3s ease; /* Smooth scaling */
+        }
+        .page img {
+            max-width: 100%; /* Ensure images fit within the container */
+            height: auto;
+            border: 1px solid #444; /* Dark border */
+            border-radius: 8px;
+        }
+        .page:hover {
+            transform: scale(1.02); /* Slight zoom on hover */
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #1e1e1e; /* Dark background for the credits box */
+            border: 1px solid #444; /* Dark border */
+            border-radius: 8px;
+            text-align: center;
+            opacity: 0; /* Start hidden for animation */
+            animation: fadeIn 1s forwards 1.5s; /* Fade in animation */
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+            color: #e0e0e0; /* Light text color */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Dark Themed Newspaper Reader</h1>
+    <div id="image-viewer">
+        <div class="page"><img src="News-01.png" alt="Page 1"></div>
+        <div class="page"><img src="News-02.png" alt="Page 2"></div>
+        <div class="page"><img src="News-03.png" alt="Page 3"></div>
+        <div class="page"><img src="News-04.png" alt="Page 4"></div>
+        <div class="page"><img src="News-05.png" alt="Page 5"></div>
+        <div class="page"><img src="News-06.png" alt="Page 6"></div>
+        <div class="page"><img src="News-07.png" alt="Page 7"></div>
+        <div class="page"><img src="News-08.png" alt="Page 8"></div>
+        <div class="page"><img src="News-09.png" alt="Page 9"></div>
+        <div class="page"><img src="News-10.png" alt="Page 10"></div>
+        <div class="page"><img src="News-11.png" alt="Page 11"></div>
+        <div class="page"><img src="News-12.png" alt="Page 12"></div>
+        <div class="page"><img src="News-13.png" alt="Page 13"></div>
+        <div class="page"><img src="News-14.png" alt="Page 14"></div>
+        <div class="page"><img src="News-15.png" alt="Page 15"></div>
+        <div class="page"><img src="News-16.png" alt="Page 16"></div>
+        <div class="page"><img src="News-17.png" alt="Page 17"></div>
+        <div class="page"><img src="News-18.png" alt="Page 18"></div>
+        <div class="page"><img src="News-19.png" alt="Page 19"></div>
+        <div class="page"><img src="News-20.png" alt="Page 20"></div>
+        <!-- Add more pages as needed -->
+    </div>
+    <footer>
+        <p>Credits Goes To The People Who Made The Newspaper | This Website Only Displays It For Educational Purposes</p>
+    </footer>
+</body>
+</html>
