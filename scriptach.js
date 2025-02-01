@@ -20,7 +20,7 @@ const buttonsData = [
     { name: "Nitesh", description: "Sigma X999, Loves Football, Maths, Science, Loves Billiards, Computers, Gaming, Karate (Brown I)." },
     { name: "Bhavika", description: "Manga Artist (In Training)." },
     { name: "Praneetha", description: "Tall, Lady Sigma." },
-    { name: "Preethi", description: "Description Incomplete." },
+    { name: "Preethi", description: "Likes Acting." },
     { name: "Rithvik", description: "Sigma +, Loves Computers, Basketball, Badminton, Video Games, Adventure Mode ON, Science, Math, Science, Anime." },
     { name: "Sampreet", description: "Football, Crafting." },
     { name: "Shradha", description: "I LOVE CRICKET! VISA(Loves)BFF Shrad." },
