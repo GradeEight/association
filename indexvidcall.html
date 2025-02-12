@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jitsi Video Call</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text */
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease; /* Smooth transition for background */
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            transition: color 0.3s ease; /* Smooth transition for text color */
+        }
+
+        #roomName {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            width: 300px;
+            font-size: 1em;
+            transition: border 0.3s ease; /* Smooth transition for border */
+        }
+
+        #joinButton {
+            padding: 10px 20px;
+            background-color: #007bff; /* Blue background */
+            color: #ffffff; /* White text */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for button */
+        }
+
+        #joinButton:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            transform: scale(1.05); /* Slightly enlarge button on hover */
+        }
+
+        #jitsi-meet {
+            width: 800px;
+            height: 600px;
+            border: 2px solid #007bff; /* Blue border around video */
+            border-radius: 10px;
+            overflow: hidden; /* Ensure no overflow */
+            transition: border 0.3s ease; /* Smooth transition for border */
+        }
+    </style>
+</head>
+<body>
+    <h1>Join a Video Call</h1>
+    <input type="text" id="roomName" placeholder="Enter Room Name" />
+    <button id="joinButton">Join Room</button>
+    <div id="jitsi-meet"></div>
+    
+    <script src='https://meet.jit.si/external_api.js'></script>
+    <script>
+        const domain = 'meet.jit.si';
+        const joinButton = document.getElementById('joinButton');
+
+        joinButton.onclick = function() {
+            const roomName = document.getElementById('roomName').value || 'defaultRoom'; // Default room if none provided
+            const options = {
+                roomName: roomName, // Use the room name from the input
+                width: 800,
+                height: 600,
+                parentNode: document.querySelector('#jitsi-meet'),
+                interfaceConfigOverwrite: { 
+                    filmStripOnly: false 
+                },
+                configOverwrite: {
+                    startWithAudioMuted: false,
+                    startWithVideoMuted: false,
+                    enableWelcomePage: false, // Disable the welcome page
+                    prejoinPageEnabled: false // Disable the pre-join page
+                }
+            };
+            const api = new JitsiMeetExternalAPI(domain, options);
+        };
+    </script>
+</body>
+</html>
