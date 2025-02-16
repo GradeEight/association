@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements Board</title>
+    <link rel="icon" href="8B.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesann.css">
+</head>
+<body>
+    <div class="board">
+        <h1>Announcements</h1>
+        <div class="announcement" id="announcement1">
+            <div class="pin"></div>
+            <h2>Inter House Event</h2>
+            <p>Inter House Event At 17-2-2025(Contains Sherlock and Enolas, Cubing etc.).</p>
+            <button class="btn" onclick="openPopup('popup1')">Read More</button>
+        </div>
+        <div class="announcement" id="announcement2">
+            <div class="pin"></div>
+            <h2>TFS JMUN 2025</h2>
+            <p>TFS JMUN 2025 At 21/22-2-2025(Contains Model United Nations To Prepare Students).</p>
+            <button class="btn" onclick="openPopup('popup2')">Read More</button>
+        </div>
+        <div class="announcement" id="announcement3">
+            <div class="pin"></div>
+            <h2>Announcement Title 3</h2>
+            <p>This is a brief content of the third announcement.</p>
+            <button class="btn" onclick="openPopup('popup3')">Read More</button>
+        </div>
+    </div>
+
+    <!-- Popup Structure -->
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup1')">&times;</span>
+            <h2>Announcement Title 1</h2>
+            <p>This is the full content of the first announcement. Please read it carefully!</p>
+        </div>
+    </div>
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup2')">&times;</span>
+            <h2>Announcement Title 2</h2>
+            <p>This is the full content of the second announcement. Don't miss it!</p>
+        </div>
+    </div>
+    <div id="popup3" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup3')">&times;</span>
+            <h2>Announcement Title 3</h2>
+            <p>This is the full content of the third announcement. Important updates inside!</p>
+        </div>
+    </div>
+
+    <script src="scriptann.js"></script>
+</body>
+</html>

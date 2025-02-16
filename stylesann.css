@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+    padding: 20px;
+}
+
+.board {
+    background-color: #1e1e1e; /* Darker board background */
+    border: 2px solid #333; /* Dark border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: auto;
+    transition: transform 0.3s ease; /* Animation for board */
+}
+
+.board:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+h1 {
+    text-align: center;
+    color: #1310c3; /* Light purple color */
+}
+
+.announcement {
+    background-color: #2a2a2a; /* Darker announcement background */
+    border: 1px solid #444; /* Dark border */
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animation for announcements */
+}
+
+.announcement:hover {
+    background-color: #3a3a3a; /* Change background on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.pin {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top : -10px;
+    left: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    margin: 0 0 10px;
+    color: #ffffff; /* White text for titles */
+}
+
+p {
+    margin: 0;
+    color: #b0b0b0; /* Light gray for paragraph text */
+}
+
+.btn {
+    background-color: #007bff; /* Blue button */
+    color: white; /* White text on button */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Button animations */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Popup Styles */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+.popup-content {
+    background-color: #2a2a2a; /* Dark background for popup */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #444; /* Dark border */
+    border-radius: 10px;
+    width: 80%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+    color: #aaa; /* Light gray */
+    float: right; /* Float the close button to the right */
+    font-size: 28px; /* Large font size */
+    font-weight: bold; /* Bold text */
+}
+
+.close:hover,
+.close:focus {
+    color: white; /* Change color on hover */
+    text-decoration: none; /* No underline */
+    cursor: pointer; /* Pointer cursor on hover */
+}
