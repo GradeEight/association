@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credits For Education</title>
+    <link rel="icon" href="8B.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesedcred.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome To Credits</h1>
+        <div class="button-container">
+            <button onclick="openPopup('popup1')">Dikshil</button>
+            <button onclick="openPopup('popup2')">Name 2</button>
+            <button onclick="openPopup('popup3')">Name 3</button>
+        </div>
+    </div>
+
+    <!-- Popup Structure -->
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup1')">&times;</span>
+            <h2>Description for Button 1</h2>
+            <p>This is the description for Button 1. Here you can add more details about this button.</p>
+        </div>
+    </div>
+
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup2')">&times;</span>
+            <h2>Description for Button 2</h2>
+            <p>This is the description for Button 2. Here you can add more details about this button.</p>
+        </div>
+    </div>
+
+    <div id="popup3" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('popup3')">&times;</span>
+            <h2>Description for Button 3</h2>
+            <p>This is the description for Button 3. Here you can add more details about this button.</p>
+        </div>
+    </div>
+
+    <script src="scriptedcred.js"></script>
+</body>
+</html>
