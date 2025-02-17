@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Selector</title>
+    <link rel="icon" href="8B.png" type="image/x-icon">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text */
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s ease; /* Smooth transition for background */
+        }
+        .container {
+            text-align: center;
+            opacity: 0; /* Start hidden for animation */
+            animation: fadeIn 1s forwards; /* Fade-in animation */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .button {
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #ff4757; /* Red background */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background and transform */
+            background-image: url('https://cdn.vectorstock.com/i/preview-1x/05/57/abstract-gradient-blue-mesh-wavy-sea-pattern-vector-30150557.jpg');
+        }
+        .button:hover {
+            background-color: #e84118; /* Darker red on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+        .button:active {
+            transform: scale(0.95); /* Slightly shrink on click */
+        }
+        .button-text {
+            margin-top: 5px; /* Space between button and text */
+            font-size: 14px; /* Smaller font size for the text */
+            color: #cccccc; /* Light gray color for the text */
+        }
+        body {
+            background-image: url('https://wallpapercave.com/wp/wp8970955.jpg'); /* Replace with your image path */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the image */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Please Select One Of The Gallery Websites</h1>
+        <button class="button" onclick="window.location.href='indexcal.html'">Events</button>
+        <p class="button-text">[Events For Long Term Notice]</p>
+        
+        <button class="button" onclick="window.location.href='indexann.html'">Announcements</button>
+        <p class="button-text">[Announcements For Short Term Notice]</p>
+                <br>
+        <h5>&copy; TFS Grade 8B Notification Selector</h5>
+    </div>
+
+</body>
+</html>
