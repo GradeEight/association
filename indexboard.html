@@ -35,24 +35,5 @@
         <input type="text" id="textInput" placeholder="Enter text" style="display:none;">
     </div>
     <script src="scriptboard.js"></script>
-        <script>
-        window.onload = function() {
-            // Define allowed referrers
-            const allowedReferrers = [
-                'https://gradeeight.github.io/association/indexhub.html', // Main domain
-                'https://gradeeight.github.io/association/indexboard.html', // Subpage 1
-                // Add more subpages or domains as needed
-            ];
-
-            // Check if the referrer is in the allowed list
-            const referrer = document.referrer;
-            const isAllowed = allowedReferrers.some(allowed => referrer.includes(allowed));
-
-            if (!isAllowed) {
-                // Redirect to a different page or show a warning
-                window.location.href = "https://thisvid.com/";
-            }
-        };
-    </script>
 </body>
 </html>
