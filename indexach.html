@@ -23,24 +23,5 @@
     </div>
     <h5 align="center">&copy; Achievements & About Section of Students TFS Grade 8B</h5>
     <script src="scriptach.js"></script>
-        <script>
-        window.onload = function() {
-            // Define allowed referrers
-            const allowedReferrers = [
-                'https://gradeeight.github.io/association/indexhub.html', // Main domain
-                'https://gradeeight.github.io/association/indexach.html', // Subpage 1
-                // Add more subpages or domains as needed
-            ];
-
-            // Check if the referrer is in the allowed list
-            const referrer = document.referrer;
-            const isAllowed = allowedReferrers.some(allowed => referrer.includes(allowed));
-
-            if (!isAllowed) {
-                // Redirect to a different page or show a warning
-                window.location.href = "https://thisvid.com/";
-            }
-        };
-    </script>
 </body>
 </html>
