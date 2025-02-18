@@ -75,24 +75,5 @@
                 <br>
         <h5>&copy; TFS Grade 8B Chat Selector</h5>
     </div>
-    <script>
-        window.onload = function() {
-            // Define allowed referrers
-            const allowedReferrers = [
-                'https://gradeeight.github.io/association/indexhub.html', // Main domain
-                'https://gradeeight.github.io/association/indexchatredirect.html', // Subpage 1
-                // Add more subpages or domains as needed
-            ];
-
-            // Check if the referrer is in the allowed list
-            const referrer = document.referrer;
-            const isAllowed = allowedReferrers.some(allowed => referrer.includes(allowed));
-
-            if (!isAllowed) {
-                // Redirect to a different page or show a warning
-                window.location.href = "https://thisvid.com/";
-            }
-        };
-    </script>
 </body>
 </html>
