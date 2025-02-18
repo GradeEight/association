@@ -10,7 +10,7 @@ window.onload = function() {
 
 function checkPassword() {
     const passwordInput = document.getElementById('password').value;
-    const correctPassword = 'test'; // Change this to your desired password
+    const correctPassword = 'dev'; // Change this to your desired password
 
     if (passwordInput === correctPassword) {
         const modal = document.getElementById('modal');
